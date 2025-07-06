@@ -15,7 +15,7 @@ function giveRecipe(event){
 let userInput= document.querySelector("#request");
 let apiKey ="5eb0eof63a40df20e382fa4batcaf05e";
 let prompt =`Generate a recipe about ${userInput.value}`;
-let context ="You are a world famous chef that focus on making healthy recipe for fitness and health.Do not use US metrics and make sure it is short and simple.Please generate the recipe in HTML and do not show the word html, separate each ingredients and instructions in </br> without space in between. ";
+let context ="You are a world famous chef that focus on making healthy recipe for fitness and health.Do not use US metrics and make sure it is short and simple.Please generate the recipe in HTML and do not show the word html, separate each ingredients and instructions in </br> without space in between sentences. Show the calories of this recipe.";
 let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let recipeElement = document.querySelector("#idea");

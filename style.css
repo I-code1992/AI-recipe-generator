@@ -51,7 +51,7 @@ footer{
   background: rgb(250, 246, 246); 
   margin-top: 25px;
   width: auto;
-  padding: 60px 20px;
+  padding: 40px 20px;
   border-radius: 10px;
 }
 
@@ -69,4 +69,20 @@ footer{
   to {
     visibility: hidden;
   }
+}
+
+.motivation{
+     animation:	blink-animation 1s steps(5, start) infinite;
+    }
+
+
+@keyframes slideIn {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
