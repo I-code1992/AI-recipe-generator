@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GET FIT-MEAL 🍽️</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
     <div class="container">
     <h1>GET FIT-MEAL 🍽️</h1>
-    <form>
-        <input type="text" class="search" id="request">
+    <form id="recipe-generator-form">
+        <input type="text" class="search" id="request" placeholder="what's cooking?">
         <input type="submit" class="button">
     </form>
-    <div class="result">This is your recipe</div>
-    
+    <div class="result" id="idea"></div>
+  <p>hint: 500 calories meal, cook under 15 mins etc..</p>  
 </div>
+
 <footer>This AI project is coded by<a href="https://github.com/I-code1992" target="_blank"> See Mei Thong</a> and is an <a href="https://github.com/I-code1992/AI-recipe-generator"
-        target="_blank">open source </a> on Github and it is hosted on Netlify.</footer>
+        target="_blank">open source </a> on Github and it is hosted on <a href="https://airecipehealthy.netlify.app/"
+        target="_blank">Netlify.</a></footer>
 </body>
+<script src="index.js"></script>
 </html>
